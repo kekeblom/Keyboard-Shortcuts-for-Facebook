@@ -24,10 +24,12 @@ This extension is released under the MIT License.
 
 - http://findicons.com/icon/17061/keyboard?id=17061
 
-- https://github.com/marquete/kibo
+- http://craig.is/killing/mice
 
 - http://jquery.com/
 
 ## Feedback ##
 
-http://twitter.com/zuzara
+http://twitter.com/kekeblom
+
+## forked from https://github.com/zuzara
