@@ -12,19 +12,19 @@ Simply open facebook.com then type:
 
 - `j`: down one item on your News Feed
 
-- `k`: up
+- `k`: up 
 
 - `u`: jump to the top
 
-- 'g f': go to news feed
+- `g f`: go to news feed
 
-- 'g m': go to messages
+- `g m`: go to messages
 
-- 'g e': go to events
+- `g e`: go to events
 
-- 'l': likes a post
+- `l`: likes a post
 
-- 'r': focuses the comment box of the current post, use tab to jump out of the input box
+- `r`: focuses the comment box of the current post, use tab to jump out of the input box
 
 ## License ##
 
