@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
     var cur = -1;
     var $html = $('html, body');
@@ -9,14 +8,30 @@ $(document).ready(function(){
     var doScroll = function(){
         var $li = $('#home_stream li.uiUnifiedStory:eq(' + cur + ')');
         if ($li.length === 0) {
-            cur = 0;
+            $html.stop().animate({
+                scrollTop: 0
+            }, 100);
+            cur = -1;
             return;
-        }
-        $html.stop().animate({
-            scrollTop: $li.offset().top - blueBarHeight
+        } else {
+            $html.stop().animate({
+                scrollTop: $li.offset().top - blueBarHeight
         }, 75);
-        // $(document).scrollTop($li.offset().top-blueBarHeight);
+        };
     };
+
+    // advance the counter if user
+
+    // $(window).scroll( function(){
+    //     var $li = $('#home_stream li.uiUnifiedStory:eq(' + cur + ')');
+    //     if ( $(window).scrollTop() >= $li.offset().top ) {
+    //         cur++;
+    //         return;
+    //     } if ( $(window).scrollTop() <= $li.offset().top ){
+    //         cur--;
+    //         return;
+    //     };
+    // });
 
     // bindings
 
@@ -31,7 +46,7 @@ $(document).ready(function(){
         return; 
     });
     Mousetrap.bind('u', function(){         // scroll to top
-        cur = 0;
+        cur = -1;
         doScroll();
         return; 
     });
@@ -43,5 +58,12 @@ $(document).ready(function(){
         return;
     });
     Mousetrap.bind('g e', function() { window.open("/events/", "_self") }); // go to events on 'g e'
-
+    Mousetrap.bind('r', function(){                                         // focus comments box on when 'r' is pressed
+        $('#home_stream li.uiUnifiedStory:eq(' + cur + ') textarea').focus();
+        return;
+    });
+    Mousetrap.bind('l', function(){                                         // like post by pressing 'l'
+        $('#home_stream li.uiUnifiedStory:eq(' + cur + ') button').click();
+        return;
+    });
 });

@@ -16,6 +16,16 @@ Simply open facebook.com then type:
 
 - `u`: jump to the top
 
+- 'g f': go to news feed
+
+- 'g m': go to messages
+
+- 'g e': go to events
+
+- 'l': likes a post
+
+- 'r': focuses the comment box of the current post, use tab to jump out of the input box
+
 ## License ##
 
 This extension is released under the MIT License.
@@ -28,8 +38,9 @@ This extension is released under the MIT License.
 
 - http://jquery.com/
 
+- forked from https://github.com/zuzara
+
 ## Feedback ##
 
 http://twitter.com/kekeblom
 
-## forked from https://github.com/zuzara
