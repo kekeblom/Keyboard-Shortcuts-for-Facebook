@@ -1,12 +1,12 @@
-# Keyboard Shortcuts for Facebook #
+# Keyboard Shortcuts for Facebook
 
 This Chrome Extension provides Gmail like keyboard shortcuts for Facebook.
 
-## Download ##
+## Download
 
 https://chrome.google.com/webstore/detail/bjfnkbhnmhblmehgnnjglihlgcoiladc
 
-## Usage ##
+## Usage
 
 Simply open facebook.com then type:
 
@@ -26,13 +26,13 @@ Simply open facebook.com then type:
 
 - `r`: focuses the comment box of the current post, use tab to jump out of the input box
 
-## License ##
+## License
 
 This extension is released under the MIT License.
 
-## Thanks! ##
+## Thanks!
 
-- http://findicons.com/icon/17061/keyboard?id=17061
+- icon made by http://andrewbadger.deviantart.com/
 
 - http://craig.is/killing/mice
 
@@ -40,7 +40,6 @@ This extension is released under the MIT License.
 
 - forked from https://github.com/zuzara
 
-## Feedback ##
+## Feedback
 
 http://twitter.com/kekeblom
-

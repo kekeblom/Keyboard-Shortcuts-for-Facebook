@@ -18,20 +18,9 @@ $(document).ready(function(){
                 scrollTop: $li.offset().top - blueBarHeight
         }, 75);
         };
+        $('#home_stream li.uiUnifiedStory:eq(' + cur + ')').waypoint(opts);
+        console.log(cur);
     };
-
-    // advance the counter if user
-
-    // $(window).scroll( function(){
-    //     var $li = $('#home_stream li.uiUnifiedStory:eq(' + cur + ')');
-    //     if ( $(window).scrollTop() >= $li.offset().top ) {
-    //         cur++;
-    //         return;
-    //     } if ( $(window).scrollTop() <= $li.offset().top ){
-    //         cur--;
-    //         return;
-    //     };
-    // });
 
     // bindings
 
@@ -59,11 +48,17 @@ $(document).ready(function(){
     });
     Mousetrap.bind('g e', function() { window.open("/events/", "_self") }); // go to events on 'g e'
     Mousetrap.bind('r', function(){                                         // focus comments box on when 'r' is pressed
-        $('#home_stream li.uiUnifiedStory:eq(' + cur + ') textarea').focus();
+        setTimeout(function(cur){
+            $('#home_stream li.uiUnifiedStory:eq(' + cur + ') textarea').focus();
+        }, 3000);
         return;
     });
     Mousetrap.bind('l', function(){                                         // like post by pressing 'l'
         $('#home_stream li.uiUnifiedStory:eq(' + cur + ') button').click();
         return;
+    });
+    Mousetrap.bind('n', function(){
+        $('#fbNotificationsFlyout').toggle();
+     
     });
 });

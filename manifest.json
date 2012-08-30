@@ -1,11 +1,14 @@
 {
+  "manifest_version": 2,
   "name": "Keyboard Shortcuts for Facebook",
   "version": "0.2",
   "description": "Keyboard shortcuts for facebook.",
+  "default_locale": "en",
   "icons": { "16": "icon128.png",
              "48": "icon128.png",
             "128": "icon128.png"
   },
+  "homepage_url": "http://twitter.com/kekeblom",
   "browser_action": {
       "default_title": "Keyboard Shortcuts for Facebook",
       "default_icon": "icon128.png"
@@ -13,7 +16,7 @@
   "content_scripts": [
     {
       "matches": ["http://www.facebook.com/*", "https://www.facebook.com/*"],
-      "js": ["jquery-1.7.2.min.js", "mousetrap.js", "script.js"]
+      "js": ["libs.js", "script.js"]
     }
   ]
 }
