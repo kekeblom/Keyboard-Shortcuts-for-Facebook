@@ -3,7 +3,6 @@
   "name": "Keyboard Shortcuts for Facebook",
   "version": "0.2",
   "description": "Keyboard shortcuts for facebook.",
-  "default_locale": "en",
   "icons": { "16": "icon128.png",
              "48": "icon128.png",
             "128": "icon128.png"

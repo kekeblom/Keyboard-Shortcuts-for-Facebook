@@ -18,8 +18,6 @@ $(document).ready(function(){
                 scrollTop: $li.offset().top - blueBarHeight
         }, 75);
         };
-        $('#home_stream li.uiUnifiedStory:eq(' + cur + ')').waypoint(opts);
-        console.log(cur);
     };
 
     // bindings
