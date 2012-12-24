@@ -1,4 +1,4 @@
-## WARNING! Facebook recently released some of their own keyboard shortcuts, so many of the sortcuts will not work
+## WARNING! Facebook recently released some of their own keyboard shortcuts, so many of the shortcuts will not work
 
 # Keyboard Shortcuts for Facebook
 
